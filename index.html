@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>termAI - Tu Asistente de IA en la Terminal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">termAI</div>
+            <ul>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#demo">Demostración</a></li>
+                <li><a href="#install">Instalación</a></li>
+                <li><a href="https://github.com/R-Terreros/termAI" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tu Asistente de IA en la Línea de Comandos</h1>
+                <p class="subtitle">Transforma lenguaje natural en comandos de terminal al instante. Potencia tu flujo de trabajo de desarrollo.</p>
+                <a href="#install" class="cta-button">Empezar Ahora</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Características Principales</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Traducción Instantánea</h3>
+                    <p>Convierte tus ideas en comandos de shell sin esfuerzo y sin errores de sintaxis.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Automatización</h3>
+                    <p>Automatiza tareas repetitivas, desde crear scripts hasta gestionar archivos, con simples instrucciones.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Seguro y Controlado</h3>
+                    <p>Revisa siempre el comando generado antes de ejecutarlo. Tú tienes el control total.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Funciona Localmente</h3>
+                    <p>Utiliza el poder de un LLM en tu propia máquina, asegurando privacidad y velocidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="demo">
+            <h2>Mira cómo funciona</h2>
+            <div class="demo-window">
+                <div class="demo-header">
+                    <span>bash</span>
+                </div>
+                <div class="demo-body">
+                    <p><span class="prompt">👤 Tú:</span> crea un servidor web simple en python</p>
+                    <p><span class="command">🚀 Comando a ejecutar:</span></p>
+                    <pre><code class="language-bash">python -m http.server 8000</code></pre>
+                    <p><span class="explanation">📝 Explicación:</span></p>
+                    <p>Inicia un servidor web HTTP básico en el puerto 8000, sirviendo los archivos del directorio actual.</p>
+                    <p><span class="prompt">¿Deseas ejecutar el comando? (S/N)</span> <span class="cursor">_</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="install" class="install">
+            <h2>Instalación y Descarga</h2>
+            <div class="install-steps">
+                <div class="step">
+                    <p>Opción 1: Clonar el repositorio</p>
+                    <pre><a href="https://github.com/R-Terreros/termAI" target="_blank"><code class="language-bash">git clone https://github.com/R-Terreros/termAI.git</code></a></pre>
+                </div>
+                <div class="step">
+                    <p>Opción 2: Descargar el script directamente</p>
+                    <a href="#" id="download-script-btn" class="cta-button download-button"><i class="fas fa-download"></i> Descargar termAI.py</a>
+                </div>
+                <div class="step">
+                    <p>Instalar dependencias y ejecutar</p>
+                    <pre><code class="language-bash">pip install llama-cpp-python
+python termAI.py</code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 termAI. Creado con ❤️ por <a href="https://github.com/R-Terreros" target="_blank">Roberto Terreros</a>.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
