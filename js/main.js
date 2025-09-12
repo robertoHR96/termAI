@@ -38,4 +38,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 .catch(err => console.error('Error al descargar el archivo:', err));
         });
     }
+
+    // Nav hamburger menu
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        hamburger.classList.toggle('toggle');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinks.classList.contains('nav-active')) {
+                navLinks.classList.remove('nav-active');
+                hamburger.classList.remove('toggle');
+            }
+        });
+    });
 });
