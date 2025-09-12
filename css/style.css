@@ -63,6 +63,7 @@ nav .logo {
 .logo-img {
     height: 40px;
     margin-right: 10px;
+    border-radius: 50%;
 }
 
 nav ul {
@@ -95,6 +96,15 @@ section {
     justify-content: center;
 }
 
+.hero-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.6); /* Green glow */
+    animation: float 4s ease-in-out infinite;
+}
+
 .hero-content h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -124,7 +134,7 @@ section {
 
 .cta-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(57, 255, 20, 0.8);
+    box-shadow: 0 0 25px rgba(57, 255, 20,.8);
 }
 
 .features h2, .demo h2, .install h2 {
@@ -208,6 +218,18 @@ section {
 
 @keyframes blink {
     50% { opacity: 0; }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 pre {
