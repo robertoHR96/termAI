@@ -1,3 +1,5 @@
+<p align="center"><img src="logoTermAI.png" alt="termAI Logo" width="200"></p>
+
 # termAI: Tu Asistente de IA en la Línea de Comandos
 
 `termAI` es un script de Python que actúa como un asistente en la línea de comandos. Utiliza un modelo de lenguaje grande (LLM) para traducir tus solicitudes en lenguaje natural a comandos de terminal ejecutables. Puedes pedirle que cree archivos, escriba código, ejecute scripts y mucho más, todo desde tu terminal.
