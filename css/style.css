@@ -85,12 +85,12 @@ main {
 }
 
 section {
-    padding: 4rem 5%;
+    padding: 3rem 5%;
     text-align: center;
 }
 
 .hero {
-    min-height: 80vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
