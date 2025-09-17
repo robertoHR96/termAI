@@ -110,17 +110,64 @@
 
         <section id="demo" class="demo">
             <h2>Mira cómo funciona</h2>
-            <div class="demo-window">
-                <div class="demo-header">
-                    <span>bash</span>
+            <div class="demo-grid">
+                <div class="demo-item demo-window">
+                    <div class="demo-header">
+                        <span>Modo Comando Directo</span>
+                    </div>
+                    <div class="demo-body">
+                        <p><span class="prompt">user@host:~$</span> <span class="command">termai "crea un servidor web simple en python"</span></p>
+                        <p><span class="command">🚀 Comando a ejecutar:</span></p>
+                        <pre><code class="language-bash">python -m http.server 8000</code></pre>
+                        <p><span class="explanation">📝 Explicación:</span></p>
+                        <p>Inicia un servidor web HTTP básico en el puerto 8000, sirviendo los archivos del directorio actual.</p>
+                        <p><span class="prompt">¿Deseas ejecutar el comando? (S/N)</span> <span class="cursor">_</span></p>
+                        <br>
+                        <p><span class="prompt">user@host:~$</span> <span class="command">termai "dime en que directorio estoy"</span></p>
+                        <p><span class="command">🚀 Comando a ejecutar:</span></p>
+                        <pre><code class="language-bash">pwd</code></pre>
+                        <p><span class="explanation">📝 Explicación:</span></p>
+                        <p>Muestra la ruta del directorio de trabajo actual.</p>
+                        <p><span class="prompt">¿Deseas ejecutar el comando? (S/N)</span> <span class="cursor">_</span></p>
+                        <br>
+                        <p><span class="prompt">user@host:~$</span> <span class="command">termai "crea una carpeta llamada 'mis_proyectos'"</span></p>
+                        <p><span class="command">🚀 Comando a ejecutar:</span></p>
+                        <pre><code class="language-bash">mkdir mis_proyectos</code></pre>
+                        <p><span class="explanation">📝 Explicación:</span></p>
+                        <p>Crea un nuevo directorio llamado 'mis_proyectos' en la ubicación actual.</p>
+                        <p><span class="prompt">¿Deseas ejecutar el comando? (S/N)</span> <span class="cursor">_</span></p>
+                    </div>
                 </div>
-                <div class="demo-body">
-                    <p><span class="prompt">👤 Tú:</span> crea un servidor web simple en python</p>
-                    <p><span class="command">🚀 Comando a ejecutar:</span></p>
-                    <pre><code class="language-bash">python -m http.server 8000</code></pre>
-                    <p><span class="explanation">📝 Explicación:</span></p>
-                    <p>Inicia un servidor web HTTP básico en el puerto 8000, sirviendo los archivos del directorio actual.</p>
-                    <p><span class="prompt">¿Deseas ejecutar el comando? (S/N)</span> <span class="cursor">_</span></p>
+
+                <div class="demo-item demo-window">
+                    <div class="demo-header">
+                        <span>Modo Chat Interactivo</span>
+                    </div>
+                    <div class="demo-body">
+                        <p><span class="prompt">user@host:~$</span> <span class="command">termai</span></p>
+                        <p><span class="output">💻 TermAI Chat iniciado (conectado al servidor)</span></p>
+                        <p><span class="output">Escribe 'salir', 'exit' o 'quit' para terminar</span></p>
+                        <p><span class="output">==================================================</span></p>
+                        <p><span class="prompt">👤 Tú:</span> lista todos los ficheros de mi directorio</p>
+                        <p><span class="command">🚀 Comando a ejecutar:</span></p>
+                        <pre><code class="language-bash">ls -F</code></pre>
+                        <p><span class="explanation">📝 Explicación:</span></p>
+                        <p>Lista todos los archivos y directorios en el directorio actual, añadiendo un indicador de tipo (por ejemplo, '/' para directorios).</p>
+                        <p><span class="prompt">¿Deseas ejecutar el comando? (S/N)</span> <span class="cursor">s</span></p>
+                        <p><span class="output">📋 Resultado:</span></p>
+                        <pre><code class="language-bash">css/
+js/
+favicon.ico
+index.html
+</code></pre>
+                        <p>--------------------------------------------------</p>
+                        <p><span class="prompt">👤 Tú:</span> crea un archivo llamado 'saludo.txt' con el texto 'Hola, mundo!'</p>
+                        <p><span class="command">🚀 Comando a ejecutar:</span></p>
+                        <pre><code class="language-bash">echo 'Hola, mundo!' > saludo.txt</code></pre>
+                        <p><span class="explanation">📝 Explicación:</span></p>
+                        <p>Crea un archivo llamado 'saludo.txt' y escribe el texto 'Hola, mundo!' dentro de él.</p>
+                        <p><span class="prompt">¿Deseas ejecutar el comando? (S/N)</span> <span class="cursor">_</span></p>
+                    </div>
                 </div>
             </div>
         </section>

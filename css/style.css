@@ -176,14 +176,48 @@ section {
 }
 
 .demo-window {
-    max-width: 800px;
-    margin: 0 auto;
     background-color: #1e1e1e;
     border: 1px solid var(--border-color);
     border-radius: 10px;
     text-align: left;
     font-family: 'Roboto Mono', monospace;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    /* max-width and margin: 0 auto; removed as handled by parent/flexbox */
+}
+
+.demo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin-top: 2rem;
+}
+
+.demo-item {
+    flex: 1; /* Permite que los elementos crezcan y se encojan */
+    min-width: 300px; /* Ancho mínimo para cada demo */
+    max-width: 48%; /* Ocupa casi la mitad del ancho disponible */
+    margin-bottom: 1rem; /* Espacio entre elementos en vertical */
+    display: flex;
+    flex-direction: column;
+}
+
+.demo-item .demo-header {
+    font-weight: bold;
+}
+
+/* Media Query para pantallas más pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    .demo-grid {
+        flex-direction: column; /* Apilar verticalmente en móviles */
+        align-items: center;
+    }
+
+    .demo-item {
+        max-width: 90%; /* Ocupar casi todo el ancho disponible */
+        min-width: unset; /* Eliminar el ancho mínimo */
+    }
 }
 
 .demo-header {
