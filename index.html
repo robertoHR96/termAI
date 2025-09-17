@@ -129,17 +129,43 @@
             <h2>Instalación y Descarga</h2>
             <div class="install-steps">
                 <div class="step">
-                    <p>Opción 1: Clonar el repositorio</p>
-                    <pre><a href="https://github.com/robertoHR96/termAI" target="_blank"><code class="language-bash">git clone https://github.com/robertoHR96/termAI.git</code></a></pre>
+                    <h3>1. Clonar el repositorio (Recomendado)</h3>
+                    <pre><code class="language-bash">git clone https://github.com/robertoHR96/termAI.git
+cd termAI</code></pre>
+                    <p>O descarga el script directamente:</p>
+                    <pre><code class="language-bash">curl -O https://raw.githubusercontent.com/robertoHR96/termAI/main/termAI.py</code></pre>
                 </div>
                 <div class="step">
-                    <p>Opción 2: Descargar el script directamente</p>
-                    <a href="#" id="download-script-btn" class="cta-button download-button"><i class="fas fa-download"></i> Descargar termAI.py</a>
+                    <h3>2. Configurar Entorno Virtual e Instalar Dependencias</h3>
+                    <p>Es crucial usar un entorno virtual para evitar conflictos de paquetes:</p>
+                    <pre><code class="language-bash">python3 -m venv .venv
+./.venv/bin/pip install llama-cpp-python</code></pre>
                 </div>
                 <div class="step">
-                    <p>Instalar dependencias y ejecutar</p>
-                    <pre><code class="language-bash">pip install llama-cpp-python
-python termAI.py</code></pre>
+                    <h3>3. Hacer el Script Ejecutable y Crear Acceso Directo</h3>
+                    <p>Para usar `termai` como un comando del sistema:</p>
+                    <pre><code class="language-bash">chmod +x termAI.py
+sudo ln -s $(pwd)/termAI.py /usr/local/bin/termai</code></pre>
+                    <p>*(Necesitarás tu contraseña para `sudo`)*</p>
+                </div>
+                <div class="step">
+                    <h3>4. Iniciar el Servidor (Opcional, se inicia automáticamente)</h3>
+                    <p>El servidor se iniciará automáticamente la primera vez que uses `termai`. Si deseas iniciarlo manualmente en segundo plano:</p>
+                    <pre><code class="language-bash">termai --start-server</code></pre>
+                </div>
+                <div class="step">
+                    <h3>5. Usar termAI</h3>
+                    <p>Ahora puedes usar `termai` de dos maneras:</p>
+                    <h4>Modo Comando:</h4>
+                    <pre><code class="language-bash">termai "crea un servidor web simple en python"</code></pre>
+                    <h4>Modo Chat Interactivo:</h4>
+                    <pre><code class="language-bash">termai</code></pre>
+                    <p>*(Escribe 'salir', 'exit' o 'quit' para terminar el chat)*</p>
+                </div>
+                <div class="step">
+                    <h3>6. Detener el Servidor (Cuando no lo necesites)</h3>
+                    <p>Para detener el proceso del servidor en segundo plano:</p>
+                    <pre><code class="language-bash">termai --stop-server</code></pre>
                 </div>
             </div>
         </section>
